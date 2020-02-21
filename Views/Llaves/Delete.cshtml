@@ -1,0 +1,95 @@
+﻿@model ProyectoLlaves.Models.Llaves
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Estas seguro que desea borrar este registro?</h3>
+<div>
+    <h4>Llaves</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSitio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdSitio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreSitio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreSitio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OTFG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTFG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuienRetira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuienRetira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OperadorEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperadorEntrega)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index" , new { }, new { @class="btn btn-primary" })
+        </div>
+    }
+</div>

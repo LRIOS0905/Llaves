@@ -1,0 +1,134 @@
+﻿@model ProyectoLlaves.Models.Llaves
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Llaves</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSitio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdSitio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreSitio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreSitio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OTFG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTFG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuienRetira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuienRetira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OperadorEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperadorEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LlaveMecanica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LlaveMecanica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LlaveAcsys)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LlaveAcsys)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRetorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRetorno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraRetorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraRetorno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OperadorRecibe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperadorRecibe)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID } , new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class="btn btn-primary" })
+</p>

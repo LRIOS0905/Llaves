@@ -1,0 +1,150 @@
+﻿@model IEnumerable<ProyectoLlaves.Models.Llaves>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Control entrega de llaves sitios TIGO</h2>
+
+<p>
+    @Html.ActionLink("Crear Registro", "Create", new { }, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table tabla-pad">
+
+    <tr>
+        <th>
+            
+            @Html.DisplayNameFor(model => model.IdSitio)
+        </th>
+
+        <th>
+            <div style="width: 150px">
+                @Html.DisplayNameFor(model => model.NombreSitio)
+            </div>
+        </th>
+        <th>
+            <div style="width: 80px">
+                <div class="text-center">
+                    @Html.DisplayNameFor(model => model.OTFG)
+                </div>
+</th>
+        <th>
+            
+            <div style="width: 130px">
+                <div class="text-center">
+                    @Html.DisplayNameFor(model => model.QuienRetira)
+                </div>
+            </div>
+</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </th>
+        <th>
+            <div style="width: 80px">
+                @Html.DisplayNameFor(model => model.Celular)
+                </div>
+        </th>
+        <th>
+            <div style="width: 80px">
+                <div class="text-center">
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </div>
+</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora)
+        </th>
+        <th>
+            <div style="width: 110px">
+                @Html.DisplayNameFor(model => model.OperadorEntrega)
+                </div>
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+            
+
+<th><div style="width: 220px">Opciones </div></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td >
+                @Html.DisplayFor(modelItem => item.IdSitio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreSitio)
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OTFG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuienRetira)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OperadorEntrega)
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+                    
+                   
+            </td>
+            <td>
+                
+                    
+                    
+                  
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID },new { @class = "btn btn-success"}) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID },new { @class = "btn btn-info"}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID },new { @class = "btn btn-danger"})
+            </td>
+        </tr>
+
+    }
+
+</table>
+
+
